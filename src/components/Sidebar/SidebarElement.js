@@ -14,9 +14,9 @@ align-items: center;
 top: 0;
 left: 0;
 transition: 0.3s ease-in-out;
-/* opacity: ${({isOpen}) => (isOpen? '100%':'0')};
-top: ${(isOpen) => (isOpen ? '0' : '-100%')}; */
-top: 0;
+opacity: ${({isOpen}) => (isOpen? '100%':'0')};
+top: ${(isOpen) => (isOpen ? '0' : '-100%')};
+/* top: 0; */
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -32,8 +32,15 @@ font-size: 2rem;
 cursor: pointer;
 outline: none;
 `
-export const SideWrapper = styled(FaTimes)`
+export const SidebarWrapper = styled.div`
 color: #fff
+`
+
+export const SidebarMenu = styled.ul`
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6, 80px);
+text-align: center;
 `
 
 export const SidebarLink = styled(LinkS)`
