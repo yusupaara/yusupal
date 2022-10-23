@@ -16,7 +16,7 @@ const onHover = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
         </HeroBg>
         <HeroContent>
-            <HeroH1>Virtual Banking Made Easy</HeroH1>
+            <HeroH1>Fast And Secure Etherium Token</HeroH1>
             <HeroP>Sign up for a new account and get free etherium worth $250 in your account</HeroP>
             <HeroBtnWrapper>
                 <Button to='signup' onMouseEnter={onHover} 
